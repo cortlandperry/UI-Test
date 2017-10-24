@@ -25,12 +25,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func sendRight(_ sender: UIButton) {
-        textLabel.text = textLabel.text! + textFieldRight.text!;
+        textLabel.text = textLabel.text! + (textFieldRight.text!).uppercased();
         textFieldRight.text = "";
     }
     
     @IBAction func sendLeft(_ sender: UIButton) {
-        textLabel.text = textLabel.text! + textFieldLeft.text!;
+        textLabel.text = textLabel.text! + (textFieldLeft.text!).lowercased();
         textFieldLeft.text = "";
     }
     
